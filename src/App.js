@@ -82,7 +82,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://pure-forest-67601.herokuapp.com/imageurl', {
+      fetch('https://evening-atoll-40492.herokuapp.com/imageurl', {
       //fetch('http://localhost:3000/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
@@ -93,7 +93,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {        
-          fetch('https://pure-forest-67601.herokuapp.com/image', {
+          fetch('https://evening-atoll-40492.herokuapp.com/image', {
           //fetch('http://localhost:3000/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
